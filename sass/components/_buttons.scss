@@ -1,0 +1,15 @@
+.button {
+    display: inline-block;
+    border-color: transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.button-close {
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
