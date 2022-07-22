@@ -21,13 +21,6 @@
     position: absolute;
 }
 
-.checkbox__input:checked+.custom-checkbox-icon {
-    background-color: var(--accent-color);
-    border: none;
-    background-size: contain;
-    background-origin: border-box;
-}
-
 .checkbox__link {
     margin-left: 4px;
     color: var(--accent-color);
@@ -39,10 +32,17 @@
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     cursor: pointer;
-
     transition-duration: 250ms;
     transition-property: background-color;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        .checkbox__input:checked + & {
+        background-color: var(--accent-color);
+        border: none;
+        background-size: contain;
+        background-origin: border-box;
+    }
 }
 
 .modal__custom-checkbox-icon {

@@ -28,17 +28,21 @@
 
 .social-network__icon--team {
     fill: var(--icon-background-socials);
-}
 
-.social-network__icon--team:hover,
-.social-network__icon--team:focus,
-.social-network__icon--join:hover,
-.social-network__icon--join:focus {
+    &:hover,
+    &:focus {
     background-color: var(--accent-color);
     fill: var(--primary-background-color);
+        }
 }
 
 .social-network__icon--join {
     fill: var(--primary-background-color);
     background-color: var(--icon-footer);
+
+        &:hover,
+        &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primary-background-color);
+        }
 }

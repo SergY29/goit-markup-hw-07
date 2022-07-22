@@ -8,7 +8,6 @@
     display: flex;
 }
 
-
 .find-us {
     min-width: 231px;
 }
@@ -34,15 +33,16 @@
     transition-duration: 250ms;
     transition-property: color;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            }
 }
 
 .footer__address-link {
     margin-top: 9px;
-}
-
-.address-link:hover,
-.address-link:focus {
-    color: var(--accent-color);
 }
 
 .footer__community {
@@ -52,7 +52,6 @@
 .community__title {
     margin-top: 12px;
     margin-bottom: 20px;
-
     display: inline-block;
 
     font-weight: 700;

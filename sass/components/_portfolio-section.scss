@@ -22,11 +22,12 @@
     transition-duration: 250ms;
     transition-property: box-shadow;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.work-example__item:hover {
-    box-shadow: var(--shadow-example);
-    cursor: pointer;
+
+    &:hover {
+        box-shadow: var(--shadow-example);
+        cursor: pointer;
+    }
 }
 
 .work-example__image-text-overlay {
@@ -40,7 +41,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-
     padding: 63px 24px;
     transform: translatey(101%);
     background-color: var(--ovelay-box-shadow);
@@ -48,10 +48,10 @@
     transition-duration: 250ms;
     transition-property: transform;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.work-example__item:hover .work-example__overlay {
-    transform: translateY(0);
+    .work-example__item:hover & {
+            transform: translateY(0);
+    }
 }
 
 .work-example__overlay-text {

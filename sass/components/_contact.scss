@@ -20,15 +20,15 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--title-text-color);
-
     transition-property: color;
     transition-duration: 250ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+}
 }
 
 .icon {

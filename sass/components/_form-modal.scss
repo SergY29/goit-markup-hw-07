@@ -45,8 +45,6 @@
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .svg-modal {
     fill: var(--primary-text-color);
     transition-duration: 250ms;
@@ -64,14 +62,13 @@
 .form-field__input:focus {
     outline: 0;
     outline-offset: 0;
-
     border: 1px solid var(--accent-color);
     cursor: pointer;
-}
 
-.form-field__input:focus~.svg-modal {
-    cursor: pointer;
-    fill: var(--accent-color);
+    & ~.svg-modal {
+        cursor: pointer;
+        fill: var(--accent-color);
+    }
 }
 
 .form-field__textarea {
@@ -86,28 +83,29 @@
     line-height: 1.14;
     border: 1px solid var(--modal-input-border);
     border-radius: 4px;
-
     transition-duration: 250ms;
     transition-property: border;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: 0;
+        outline-offset: 0;
+        border: 1px solid var(--accent-color);
+        cursor: pointer;
+        }
+    
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: var(--placeholder-text);
+    }
 }
 
 .form-field__input {
     margin-top: 4px;
 }
 
-.form-field__textarea:focus {
-    outline: 0;
-    outline-offset: 0;
-
-    border: 1px solid var(--accent-color);
-    cursor: pointer;
-}
-
-.form-field__textarea::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: var(--placeholder-text);
-}
+.form-field__textarea {
+    
