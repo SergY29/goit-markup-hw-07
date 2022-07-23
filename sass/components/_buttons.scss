@@ -55,7 +55,7 @@
 }
 
 .modal__button {
-    @extend %button;
+    display: block;
     margin: 0 auto;
     padding: 10px 55px 10px 56px;
     font-weight: 700;
