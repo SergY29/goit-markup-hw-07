@@ -56,7 +56,12 @@
 
 .modal__button {
     @extend %button;
-
+    margin: 0 auto;
+    padding: 10px 55px 10px 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
     color: var(--primary-background-color);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
