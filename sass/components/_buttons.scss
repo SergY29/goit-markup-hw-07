@@ -9,7 +9,7 @@
 }
 
 .portfolio__button {
-
+    @extend %button;
     min-width: 73px;
     padding: 6px 22px;
     background-color: var(--acccent-background-color);
